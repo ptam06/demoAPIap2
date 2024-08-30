@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="Forecast.json" path="/v1/forecast.json" id="9e9ff386-93c2-4e55-bf26-468314017a62">
+  <con:settings id="9af6ad51-a57f-455d-ab27-9750e5fd24d9">
+    <con:setting id="9e9ff386-93c2-4e55-bf26-468314017a62fileName">Forecast.json</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Forecast.json" id="1f40ef0c-9ab7-4a03-a886-581b0140136c" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>key</con:name>
+        <con:value>28ac57e14f4844d48cf155130242708</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>28ac57e14f4844d48cf155130242708</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>q</con:name>
+        <con:value>London</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>London</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>days</con:name>
+        <con:value>1</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>1</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>aqi</con:name>
+        <con:value>no</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>no</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>alerts</con:name>
+        <con:value>no</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>no</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:for="http://api.weatherapi.com/v1/forecast.json">for:Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="79cbbb18-9f99-418b-8c71-e60b3fd41f75" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://api.weatherapi.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="alerts" value="no"/>
+        <con:entry key="q" value="London"/>
+        <con:entry key="aqi" value="no"/>
+        <con:entry key="days" value="1"/>
+        <con:entry key="key" value="28ac57e14f4844d48cf155130242708"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>key</con:entry>
+        <con:entry>q</con:entry>
+        <con:entry>days</con:entry>
+        <con:entry>aqi</con:entry>
+        <con:entry>alerts</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

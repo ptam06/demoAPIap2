@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="13f3d909-6902-4d9d-9701-c5ff8eb45f86" name="Test Suite-Whetherv2">
+  <con:settings id="7bbc8d7c-a544-431f-840c-d290281df0c0">
+    <con:setting id="13f3d909-6902-4d9d-9701-c5ff8eb45f86fileName">Test-Suite-Whetherv2</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

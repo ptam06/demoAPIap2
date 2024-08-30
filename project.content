@@ -1,0 +1,5 @@
+http%3A%2F%2Fapi.weatherapi.com\Current.json.xml
+http%3A%2F%2Fapi.weatherapi.com\Forecast.json.xml
+http%3A%2F%2Fapi.weatherapi.com-Test-Suite\http%3A%2F%2Fapi.weatherapi.com-Test-Case-1.xml
+http%3A%2F%2Fapi.weatherapi.com-Test-Suite-2\http%3A%2F%2Fapi.weatherapi.com-Test-Case-1.xml
+Test-Suite-Whetherv2\Test-Case-1.xml

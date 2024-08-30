@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="c26ba280-8739-4846-b8fd-fccf569c8773" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 1" searchProperties="true" timeout="0">
+  <con:settings id="d05b589b-20ff-424b-85d8-6e6b906c5827">
+    <con:setting id="c26ba280-8739-4846-b8fd-fccf569c8773fileName">Test-Case-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="0eb82c9d-2ef3-433c-9cc9-d46e9bf9089c">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="http://api.weatherapi.com" methodName="Current.json" resourcePath="/v1/current.json" xsi:type="con:RestRequestStep">
+      <con:restRequest name="REST Request" id="2191361a-6d67-4663-a4c6-d7fbab908086" mediaType="application/json">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://api.weatherapi.com</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="c14f8f39-e2ca-4bec-905e-17c46f8d791c" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="cad370ef-05f8-4cac-ba3e-3eb3fa248d94" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="q" value="${Data Source 2#q}"/>
+          <con:entry key="aqi" value="no"/>
+          <con:entry key="key" value="28ac57e14f4844d48cf155130242708"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

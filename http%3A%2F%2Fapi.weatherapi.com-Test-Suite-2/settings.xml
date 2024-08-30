@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="e7443834-d6b3-478e-927e-d745f8976cb1" name="http://api.weatherapi.com Test Suite 2">
+  <con:settings id="95385eeb-545e-4d8c-a24a-e515d5d88009">
+    <con:setting id="e7443834-d6b3-478e-927e-d745f8976cb1fileName">http%3A%2F%2Fapi.weatherapi.com-Test-Suite-2</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

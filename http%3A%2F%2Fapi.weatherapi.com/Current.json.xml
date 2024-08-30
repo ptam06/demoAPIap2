@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="Current.json" path="/v1/current.json" id="b8543ac1-e2ba-406e-ae76-38931a4d7afc">
+  <con:settings id="2948568c-f97e-407c-9164-a9c93958ebef">
+    <con:setting id="b8543ac1-e2ba-406e-ae76-38931a4d7afcfileName">Current.json</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Current.json" id="bf5b9111-6897-4f2b-8148-042bfeb583c5" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>key</con:name>
+        <con:value>28ac57e14f4844d48cf155130242708</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>28ac57e14f4844d48cf155130242708</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>q</con:name>
+        <con:value>London</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>London</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>aqi</con:name>
+        <con:value>no</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>no</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:cur="http://api.weatherapi.com/v1/current.json">cur:Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="5d4c205b-e337-4f2c-9b24-d8a887a653e8" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://api.weatherapi.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://api.weatherapi.com/v1/current.json</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="q" value="London"/>
+        <con:entry key="aqi" value="no"/>
+        <con:entry key="key" value="28ac57e14f4844d48cf155130242708"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>key</con:entry>
+        <con:entry>q</con:entry>
+        <con:entry>aqi</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>
